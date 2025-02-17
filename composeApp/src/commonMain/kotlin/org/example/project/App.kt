@@ -22,6 +22,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.style.TextDirection.Companion.Content
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import org.jetbrains.compose.resources.painterResource
 import org.jetbrains.compose.ui.tooling.preview.Preview
 
@@ -33,6 +34,7 @@ import kmp.composeapp.generated.resources.compose_multiplatform
 fun App() {
     MaterialTheme {
 
+
         Column(
             horizontalAlignment = Alignment.CenterHorizontally,
             modifier = Modifier.fillMaxSize(),
@@ -40,10 +42,10 @@ fun App() {
         ) {
 
 
-            Text(text = "Cricket")
+            Text(text = "Cricket", fontSize = 30.sp)
             Column() {
                 Box(
-
+                    Modifier.height(100.dp)
                 ) {
                     Row(
                         modifier = Modifier
@@ -51,13 +53,32 @@ fun App() {
                             .fillMaxWidth(1f),
                         horizontalArrangement = Arrangement.SpaceBetween
                     ) {
-                        Text(text = "Team 1")
-                        Text(text = "Score")
+                        Column {
+                            Text(text = "Team")
+                            Text(text = "Sumit")
+
+                        }
+                        Button(onClick = {}) {
+                            Text(text = "6")
+                        }
+                        Button(onClick = {}) {
+                            Text(text = "4")
+                        }
+                        Button(onClick = {}) {
+                            Text(text = "2")
+                        }
+                        Button(onClick = {}) {
+                            Text(text = "1")
+                        }
+                        Column {
+                            Text(text = "Score")
+                            Text(text = "0")
+                        }
                     }
 
                 }
                 Box(
-
+                    Modifier.height(100.dp)
                 ) {
                     Row(
                         modifier = Modifier
@@ -65,8 +86,27 @@ fun App() {
                             .fillMaxWidth(1f),
                         horizontalArrangement = Arrangement.SpaceBetween
                     ) {
-                        Text(text = "Team 1")
-                        Text(text = "Score")
+                        Column {
+                            Text(text = "Team")
+                            Text(text = "Aman")
+
+                        }
+                        Button(onClick = {}) {
+                            Text(text = "6")
+                        }
+                        Button(onClick = {}) {
+                            Text(text = "4")
+                        }
+                        Button(onClick = {}) {
+                            Text(text = "2")
+                        }
+                        Button(onClick = {}) {
+                            Text(text = "1")
+                        }
+                        Column {
+                            Text(text = "Score")
+                            Text(text = "0")
+                        }
                     }
                 }
             }
